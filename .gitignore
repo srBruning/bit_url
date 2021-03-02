@@ -20,3 +20,9 @@ client/node_modules/**/*
 client/.expo
 client/.expo/*
 .vscode/
+
+client_react/.expo-shared/
+client_react/.expo/
+client_react/node_modules/
+core/.env
+core/node_modules/
