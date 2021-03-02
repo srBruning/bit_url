@@ -1,9 +1,0 @@
-{
-  "name": "bit_url",
-  "version": "1.0.0",
-  "description": "A simple URL shortener",
-  "main": "index.js",
-  "repository": "git@github.com:srBruning/bit_url.git",
-  "author": "srBruning <diego.brg92@gmail.com>",
-  "license": "MIT"
-}
