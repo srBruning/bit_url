@@ -1,0 +1,11 @@
+
+{
+    "name": "Bit URL encurtador de links",
+    "short_name": "dibr.cc",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "browser",
+    "orientation": "portrait",
+    "Scope": "/home",
+    "start_url": "/home"
+    }

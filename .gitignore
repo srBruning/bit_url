@@ -16,4 +16,7 @@ web-build/
 
 client/web-build
 client/web-build/*
+client/node_modules/**/*
+client/.expo
+client/.expo/*
 .vscode/
