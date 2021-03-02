@@ -36,5 +36,6 @@ routes.get('/api/url', verifyJWT, SlugController.index);
 routes.get('/api/url/:slug',  SlugController.checkSlug);
 
 routes.get('/:slug', SlugController.accessUrl);
+routes.get('/', (req, res) =>{res.redirect('/home');});
 
 module.exports = routes;
