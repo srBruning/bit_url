@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigation } from '@react-navigation/native'
 import {BtnArea} from './styles'
-import { Container, Row, Col, InputGroup, FormControl, Button, 
-    Nav, Table, Navbar, Form, Image} from 'react-bootstrap';
+import { Container, Row, Button, Form, Image} from 'react-bootstrap';
 import NaveBar from '../../components/login/NaveBar';
 import RowLogin from '../../components/login/RowLogin';
 import { Text,  StyleSheet } from 'react-native';
@@ -127,7 +126,7 @@ const Fromulario =  () => {
 export default () => {
     return (
 <div>
-    <Navbar/>
+    <NaveBar/>
     <Container>
         <RowLogin >
             <Fromulario></Fromulario>

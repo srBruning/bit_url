@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { Container,  Nav} from 'react-bootstrap';
+import { Container, Image,  Nav} from 'react-bootstrap';
 
 export default (props) => {
 

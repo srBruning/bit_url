@@ -11,8 +11,7 @@ import BtnSecondary from '../../components/BtnSecondary';
 import Api from '../../Api';
 import {validaUserResponse} from '../../dao/UserDao';
 
-import { Container, Row, Col, InputGroup, FormControl, Button, 
-    Nav, Table, Navbar, Form} from 'react-bootstrap';
+import { Container, Row, Col, InputGroup, FormControl, Button} from 'react-bootstrap';
 
 const Fromulario =  () => {
     
@@ -88,7 +87,7 @@ const Fromulario =  () => {
 export default () => {
     return (
 <div>
-    <Navbar/>
+    <NavBar/>
     <Container>
         <RowLogin>
             <Fromulario></Fromulario>
