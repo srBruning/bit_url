@@ -2,8 +2,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { add } from 'react-native-reanimated'; 
 import cookie from 'react-cookies'
 
-const BASE_API ="http://localhost:3737";
-// const BASE_API ="https://dibr.cc"; 
+// const BASE_API ="http://localhost:3737";
+const BASE_API ="https://dibr.cc"; 
 
 const _currentToken = async()=>{
     let token = await cookie.load('token');

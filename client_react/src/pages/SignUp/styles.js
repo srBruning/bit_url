@@ -10,10 +10,7 @@ export const Container = styled.SafeAreaView`
 
 export const ImgLogo  = styled.Image`
 	width: 130px;
-	height: 95px;
-	margin-top: 36px;
-    margin-left: auto;
-    margin-right: auto;
+	height:30px;
 `;
 
 export const H1Label = styled.Text`
