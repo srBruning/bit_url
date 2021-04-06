@@ -13,6 +13,7 @@ import { Container, Row, Col, InputGroup, FormControl, Button,
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import logo from '../../assets/gift_box.png';
 import md5 from 'md5';
+import NavBar from '../../components/login/NaveBar'
 
 export default () => {
      
@@ -100,24 +101,16 @@ export default () => {
     }
 
     return (
-        <>
-  <Navbar bg="dark">
-    <Navbar.Brand href="#home">
-      <img
-        src={logo}
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-        alt="React Bootstrap logo"
-      />
-    </Navbar.Brand>
-    <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto"></Nav>
-    <Form inline>
-      <Button variant="outline-success" onClick={onSingOut}>Sair</Button>
-    </Form>
-  </Navbar.Collapse>
-  </Navbar>        
+        <div>
+        <NavBar  >
+            <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto"></Nav>
+            <Form inline>
+              <Button variant="outline-success" onClick={onSingOut}>Sair</Button>
+            </Form>
+            </Navbar.Collapse>
+        </NavBar>
+        
         <Container>
             <section className="url-shortener">
             <h2 className="title mb-0">Encurte seu link:</h2>
@@ -176,10 +169,7 @@ export default () => {
                 </tbody>
             </Table>            
         </Container>
-        </>
+        </div>
     );
 }
-
-<Row>
-<Col>1 of 1</Col>
-</Row>
+ 

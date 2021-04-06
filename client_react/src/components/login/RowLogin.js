@@ -13,7 +13,7 @@ export default (props) => {
                     alt="" 
                     className="img-fluid mb-3 d-none d-md-block"
                 />
-                <h1>4BR: Encurtar liks e gerar QR Code</h1>
+                <h1>4BR: Encurtar likes e gerar QR Code</h1>
                 <p className="font-italic text-muted mb-0">
                     ...
                 </p>
