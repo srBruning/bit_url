@@ -1,18 +1,10 @@
 import React, {useState, useContext, useEffect} from 'react';
 import { useNavigation } from '@react-navigation/native'
-import { ImgLogo,  H1Label, LinkLabel, BtnArea
-} from './styles'
-import { Text,  StyleSheet } from 'react-native';
-import InputPadrao from '../../components/InputPadrao';
-import BtnPrimary from '../../components/BtnPrimary';
-import BtnSecondary from '../../components/BtnSecondary';
 import Api from '../../Api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, InputGroup, FormControl, Button, 
-    Nav, Table, Navbar, Form, OverlayTrigger, Tooltip} from 'react-bootstrap';
+    Nav, Table, Navbar, Form, OverlayTrigger, Tooltip, Card} from 'react-bootstrap';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import logo from '../../assets/gift_box.png';
-import md5 from 'md5';
 import NavBar from '../../components/login/NaveBar'
 
 export default () => {
@@ -141,33 +133,33 @@ export default () => {
             </form>
             </section>
 
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                    <th>URL</th>
-                    <th>Slug</th>
-                    <th>Acessos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                { urlList.map(
-                        (item) => {
-                            const url = Api.BASE_API+'/'+item.slug;
-                        return (
-                            <tr key={item.slug}> 
-                            <td>{item.addr}</td>
-                            <td><a href={url}>{url}</a> 
-                               <Button  variant="outline-secondary" onClick={() => {navigator.clipboard.writeText(url)}}>Copy
-                                    </Button>
-                            </td>
-                            <td>{item.access}</td>
-                            </tr> 
-                        );
-                        }
-                    )
-                } 
-                </tbody>
-            </Table>            
+            <Row>
+            { urlList.map(
+                    (item) => {
+                        const url = Api.BASE_API+'/'+item.slug;
+                    return (
+                        <Card key={item.slug} className="card col-12 col-sm-6 col-md-6 col-lg-4"> 
+                       
+                        <div className="card-body">
+                            <h5 className="card-title">{item.addr}</h5>
+                            <a className="card-text" href={url}>{url}</a>
+                        </div>
+                        <div className="card-body">
+                            <p><b>Acessos:</b> {item.access}</p>
+                        </div>
+                        <div className="card-body">
+                            <Button className="card-link" 
+                                onClick={() => {navigator.clipboard.writeText(url)}}
+                            >
+                                copy
+                            </Button>
+                        </div>
+                        </Card> 
+                    );
+                    }
+                )
+            }
+            </Row>            
         </Container>
         </div>
     );

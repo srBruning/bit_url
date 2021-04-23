@@ -1,0 +1,38 @@
+{
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "lang": "en",
+  "name": "Bit URL",
+  "short_name": "Bit URL",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait", 
+
+  "theme_color": "#2196f3",
+  "Scope": "/home",
+  
+  "icons": [{
+      "src": "/static/media/4br_72x.png",
+      "sizes": "72x72",
+      "type": "image/png"
+      },
+      {
+      "src": "/static/media/4br_96x.png",
+      "sizes": "96x96",
+      "type": "image/png"
+      },
+      {
+      "src": "/static/media/4br_128x.png",
+      "sizes": "128x128",
+      "type": "image/png"
+      },
+      {
+      "src": "/static/media/4br_192x.png",
+      "sizes": "192x192",
+      "type": "image/png"
+      },
+      {
+      "src": "/static/media/4br_384x.png",
+      "sizes": "384x384",
+      "type": "image/png"
+      }]
+      }

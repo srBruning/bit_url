@@ -4,11 +4,17 @@
     "slug": "BitURL",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "src/assets/4br_96x.png",
+    "short_name": "dibr.cc",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "Scope": "/home",
+    "start_url": "/home",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2196f3"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,7 +28,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#2196f3"
       }
     },
     "web": {
